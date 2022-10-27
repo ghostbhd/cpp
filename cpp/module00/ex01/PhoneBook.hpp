@@ -9,16 +9,14 @@
 
 class PhoneBook
 {
-public:
-	PhoneBook(void);
-	~PhoneBook(void);
-
-	void addContact(void);
-	void searchContact(void) const;
-
 private:
-	Contact _contacts[8];
-	int _nbContacts;
+	Contact contacts[8];
+	int		contact_count;
+public:
+	PhoneBook();
+	~PhoneBook();
+	void add();
+	void search();
 };
 
 #endif
