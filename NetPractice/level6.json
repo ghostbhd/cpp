@@ -1,1 +1,0 @@
-{"routes":{"Ar1":{"route":"default","gate":"54.40.102.225"},"Rr1":{"route":"default"},"Ir1":{"route":"54.40.102.225/25"}},"ifs":{"A1":{"mask":"/25"},"R1":{"ip":"54.40.102.225"},"R2":{},"S1":{},"Somewhere on the Net":{},"I1":{}}}
