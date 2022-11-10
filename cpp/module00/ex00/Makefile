@@ -1,4 +1,4 @@
-SRCS =	*.cpp
+SRCS =	megaphone.cpp
 
 CPP = @c++
 
