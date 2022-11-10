@@ -8,7 +8,7 @@ RM = @rm -rf
 
 AR = @ar -rc
 
-NAME = megaphone
+NAME = phone
 
 all : $(NAME)
 
