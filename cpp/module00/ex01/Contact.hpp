@@ -6,7 +6,7 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 17:19:12 by abouhmad          #+#    #+#             */
-/*   Updated: 2022/11/09 17:19:17 by abouhmad         ###   ########.fr       */
+/*   Updated: 2022/11/11 15:28:08 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,6 @@
 class Contact
 {
     public:
-        Contact(void);
-        ~Contact(void);
-
         void addContact(void);
         void searchContact(void) const;
 

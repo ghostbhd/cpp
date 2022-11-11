@@ -6,19 +6,11 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 09:51:52 by abouhmad          #+#    #+#             */
-/*   Updated: 2022/11/09 17:19:25 by abouhmad         ###   ########.fr       */
+/*   Updated: 2022/11/11 17:04:52 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Contact.hpp"
-
-Contact::Contact(void)
-{
-}
-
-Contact::~Contact(void)
-{
-}
 
 void Contact::addContact(void)
 {
@@ -32,4 +24,9 @@ void Contact::addContact(void)
     std::getline(std::cin, this->_phoneNumber);
     std::cout << "Darkest Secret: ";
     std::getline(std::cin, this->_darkestSecret);
+}
+
+void Contact::searchContact(void)
+{
+    
 }
