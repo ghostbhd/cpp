@@ -6,7 +6,7 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 17:19:12 by abouhmad          #+#    #+#             */
-/*   Updated: 2022/11/11 15:28:08 by abouhmad         ###   ########.fr       */
+/*   Updated: 2022/11/12 15:01:54 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,13 @@
 #include <string>
 #include <iomanip>
 #include <sstream>
+#include <cstring>
 
 class Contact
 {
     public:
         void addContact(void);
-        void searchContact(void) const;
+        void searchContact(void);
 
     private:
         std::string _firstName;

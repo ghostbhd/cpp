@@ -6,7 +6,7 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 17:18:49 by abouhmad          #+#    #+#             */
-/*   Updated: 2022/11/10 17:13:04 by abouhmad         ###   ########.fr       */
+/*   Updated: 2022/11/12 16:17:17 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@
 #include <string>
 #include <iomanip>
 #include <sstream>
+#include <cstring>
+#include <stdlib.h>
 #include "Contact.hpp"
 
 class PhoneBook
@@ -26,7 +28,7 @@ private:
 	int		contact_count;
 public:
 	void add();
-	void search();
+	void search(void);
 };
 
 #endif

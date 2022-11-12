@@ -6,7 +6,7 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 09:51:52 by abouhmad          #+#    #+#             */
-/*   Updated: 2022/11/11 17:04:52 by abouhmad         ###   ########.fr       */
+/*   Updated: 2022/11/12 16:15:56 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,9 @@ void Contact::addContact(void)
 
 void Contact::searchContact(void)
 {
-    
+    std::cout << std::setw(10) << this->_firstName << "|";
+    std::cout << std::setw(10) << this->_lastName << "|";
+    std::cout << std::setw(10) << this->_nickname << "|";
+    std::cout << std::setw(10) << this->_phoneNumber << "|";
+    std::cout << std::setw(10) << this->_darkestSecret << std::endl;
 }
