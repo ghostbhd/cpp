@@ -6,15 +6,21 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/08 00:42:00 by abouhmad          #+#    #+#             */
-/*   Updated: 2022/11/13 19:03:18 by abouhmad         ###   ########.fr       */
+/*   Updated: 2022/11/15 15:05:12 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PhoneBook.hpp"
 
+void PhoneBook::init(void)
+{
+	this->contact_count = 0;
+	this->size = 0;
+}
+
 void PhoneBook::add(void)
 {
-	if (this->contact_count == 8)
+	if (this->contact_count > 7)
 		this->contact_count = 0;
 	this->contacts[this->contact_count].addContact();
 	this->contact_count++;
@@ -27,42 +33,18 @@ void PhoneBook::search(void)
 	int i = 0;
 	int index;
 
-	while (i < 8)
+	while (i < this->size)
 	{
 		std::cout << std::setw(10) << i << "|";
-		this->contacts[i].searchContact();
+		this->contacts[i].showContact();
 		i++;
 	}
 	std::cout << "Enter index: ";
 	std::cin >> index;
-	if (index >= 0 && index < this->size)
+	if (0 <= index && index < this->size)
 		this->contacts[index].searchContact();
 	else
 		std::cout << "Invalid index" << std::endl;
-}
-
-int main()
-{
-	std::string input;
-	PhoneBook phone;
-
-	while (1)
-	{
-		std::cout << "Enter one of three commands : ADD, SEARCH or EXIT" << std::endl;
-		std::cout << "> ";
-		getline(std::cin, input);
-		if (input.compare("ADD") == 0)
-			phone.add();
-		else if (input.compare("SEARCH") == 0)
-			phone.search();
-		else if (input.compare("EXIT") == 0)
-			break;
-		else
-		{
-			std::cout << "\033[31mInvalid command\033[0m" << std::endl;
-			usleep(1500000);
-			system("clear");
-		}
-	}
-	return (0);
+	std::cin.clear();
+	fflush(stdin);
 }

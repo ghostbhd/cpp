@@ -10,12 +10,12 @@ AR = @ar -rc
 
 NAME = phone
 
-sanitize: -fsanitize=address -static-libasan
+sanitize = -fsanitize=address -static-libasan -g3
 
 all : $(NAME)
 
 $(NAME) : ${SRCS}
-	${CPP} ${CFLAGS} $(SRCS) -o $(NAME) ${sanitize}
+	${CPP} ${CFLAGS} $(SRCS) -o $(NAME) $(sanitize)
 # @echo "\n\x1b[32m \x1b[1m ✅\tMandatory Compele\n\t\x1b[0mPrograme -\x1b[33m ($(NAME))\n\x1b[0m"
 
 clean :
