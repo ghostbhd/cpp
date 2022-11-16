@@ -6,7 +6,7 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/08 00:42:00 by abouhmad          #+#    #+#             */
-/*   Updated: 2022/11/15 15:05:12 by abouhmad         ###   ########.fr       */
+/*   Updated: 2022/11/15 16:04:11 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,11 +40,12 @@ void PhoneBook::search(void)
 		i++;
 	}
 	std::cout << "Enter index: ";
+	std::cin.clear();
 	std::cin >> index;
 	if (0 <= index && index < this->size)
 		this->contacts[index].searchContact();
 	else
 		std::cout << "Invalid index" << std::endl;
-	std::cin.clear();
 	fflush(stdin);
+	std::cin.clear();
 }
