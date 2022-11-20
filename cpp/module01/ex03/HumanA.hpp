@@ -6,7 +6,7 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/18 16:07:08 by abouhmad          #+#    #+#             */
-/*   Updated: 2022/11/18 17:13:08 by abouhmad         ###   ########.fr       */
+/*   Updated: 2022/11/20 04:55:26 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,5 @@ public:
 	~HumanA();
 	void attack();
 };
-
-HumanA::HumanA(std::string name, Weapon &weapon) : _name(name), _weapon(weapon)
-{
-}
-
-HumanA::~HumanA()
-{
-}
 
 #endif
