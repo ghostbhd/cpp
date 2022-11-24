@@ -6,7 +6,7 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/22 05:55:21 by abouhmad          #+#    #+#             */
-/*   Updated: 2022/11/24 04:09:37 by abouhmad         ###   ########.fr       */
+/*   Updated: 2022/11/24 05:03:03 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,14 +20,14 @@
 class Remp
 {
 private:
-    std::string _inf;
-    std::string _outf;
+	std::string _inf;
+	std::string _outf;
 
 public:
-    Remp();
-    Remp(std::string inf);
-    ~Remp();
-    void replace(std::string find, std::string remp);
+	Remp();
+	Remp(std::string inf);
+	~Remp();
+	void replace(std::string find, std::string remp);
 };
 
 #endif
