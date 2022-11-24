@@ -6,18 +6,18 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/22 05:55:14 by abouhmad          #+#    #+#             */
-/*   Updated: 2022/11/24 05:02:06 by abouhmad         ###   ########.fr       */
+/*   Updated: 2022/11/24 17:46:15 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Remp.hpp"
+#include "Rep.hpp"
 
 int main(int ac, char **av)
 {
 	if (ac == 4)
 	{
-		Remp remp(av[1]);
-		remp.replace(av[2], av[3]);
+		Rep rep(av[1]);
+		rep.replace(av[2], av[3]);
 	}
 	else
 	{

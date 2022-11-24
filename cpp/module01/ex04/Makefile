@@ -8,7 +8,7 @@ RM = @rm -rf
 
 AR = @ar -rc
 
-NAME = remplace
+NAME = replace
 
 sanitize = -fsanitize=address -static-libasan -g3
 

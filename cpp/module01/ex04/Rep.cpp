@@ -1,31 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Remp.cpp                                           :+:      :+:    :+:   */
+/*   Rep.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/22 05:56:48 by abouhmad          #+#    #+#             */
-/*   Updated: 2022/11/24 05:02:46 by abouhmad         ###   ########.fr       */
+/*   Updated: 2022/11/24 17:45:58 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Remp.hpp"
+#include "Rep.hpp"
 
-Remp::Remp()
+Rep::Rep()
 {
 }
 
-Remp::Remp(std::string inf) : _inf(inf)
+Rep::Rep(std::string inf) : _inf(inf)
 {
 	this->_outf = inf + ".replace";
 }
 
-Remp::~Remp()
+Rep::~Rep()
 {
 }
 
-void Remp::replace(std::string find, std::string remp)
+void Rep::replace(std::string find, std::string rp)
 {
 	std::ifstream inf(this->_inf);
 	std::string content;
@@ -39,7 +39,7 @@ void Remp::replace(std::string find, std::string remp)
 			while (pos != std::string::npos)
 			{
 				content.erase(pos, find.length());
-				content.insert(pos, remp);
+				content.insert(pos, rp);
 				pos = content.find(find);
 			}
 			outf << content;
