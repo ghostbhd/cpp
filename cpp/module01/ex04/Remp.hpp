@@ -6,7 +6,7 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/22 05:55:21 by abouhmad          #+#    #+#             */
-/*   Updated: 2022/11/22 12:50:10 by abouhmad         ###   ########.fr       */
+/*   Updated: 2022/11/24 04:09:37 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #define REMP_HPP
 
 #include <iostream>
+#include <fstream>
 #include <string>
 
 class Remp
@@ -24,9 +25,9 @@ private:
 
 public:
     Remp();
-    Remp(std::string inf, std::string outf);
+    Remp(std::string inf);
     ~Remp();
-    void replace(std::string s1, std::string s2);
+    void replace(std::string find, std::string remp);
 };
 
 #endif
