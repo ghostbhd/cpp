@@ -8,7 +8,7 @@ RM = @rm -rf
 
 AR = @ar -rc
 
-NAME = zombie
+NAME = fixed
 
 sanitize = -fsanitize=address -static-libasan -g3
 

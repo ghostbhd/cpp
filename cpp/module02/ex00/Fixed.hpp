@@ -6,7 +6,7 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/25 16:12:15 by abouhmad          #+#    #+#             */
-/*   Updated: 2022/11/27 05:05:20 by abouhmad         ###   ########.fr       */
+/*   Updated: 2022/11/29 06:45:36 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 class Fixed
 {
 private:
-    int _fixedPointValue;
+    int _fixedPointNbr;
     static const int _fractionalBits = 8;
 
 public:
