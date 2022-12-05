@@ -8,7 +8,7 @@ RM = @rm -rf
 
 AR = @ar -rc
 
-NAME = claptrap
+NAME = scavtrap
 
 sanitize = -fsanitize=address -static-libasan -g3
 
