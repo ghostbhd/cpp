@@ -6,7 +6,7 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/05 22:21:36 by abouhmad          #+#    #+#             */
-/*   Updated: 2022/12/06 09:08:21 by abouhmad         ###   ########.fr       */
+/*   Updated: 2022/12/06 13:08:03 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,10 @@ public:
 	Animal(std::string type);
 	Animal(const Animal &animal);
 	Animal &operator=(const Animal &animal);
-	~Animal();
+	virtual ~Animal();
 
 	std::string getType() const;
-	void makeSound() const;
+	virtual void makeSound() const;
 };
 
 #endif
