@@ -6,7 +6,7 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/06 13:26:54 by abouhmad          #+#    #+#             */
-/*   Updated: 2022/12/06 14:33:16 by abouhmad         ###   ########.fr       */
+/*   Updated: 2022/12/07 20:40:32 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,5 +48,5 @@ std::string WrongAnimal::getType() const
 
 void WrongAnimal::makeSound() const
 {
-    std::cout << "WrongAnimal makeSound called" << std::endl;
+    std::cout << "WrongAnimal sound" << std::endl;
 }
