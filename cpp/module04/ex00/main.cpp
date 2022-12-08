@@ -6,7 +6,7 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/06 08:57:03 by abouhmad          #+#    #+#             */
-/*   Updated: 2022/12/07 19:13:38 by abouhmad         ###   ########.fr       */
+/*   Updated: 2022/12/08 18:15:35 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,6 @@ int main()
 
     delete wrongAnimal;
     delete wrongCat;
-    
+
     return 0;
 }
