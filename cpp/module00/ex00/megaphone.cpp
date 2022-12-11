@@ -6,7 +6,7 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/07 20:44:22 by abouhmad          #+#    #+#             */
-/*   Updated: 2022/11/09 17:19:36 by abouhmad         ###   ########.fr       */
+/*   Updated: 2022/12/11 17:12:29 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,13 @@
 
 int main(int ac, char **av)
 {
-	int i = 0;
 	if (ac > 1)
 	{
 		for (int j = 1; j < ac; j++)
 		{
+			int i = 0;
 			while (av[j][i])
 				putchar(toupper(av[j][i++]));
-			i = 0;
 		}
 		putchar('\n');
 	}
