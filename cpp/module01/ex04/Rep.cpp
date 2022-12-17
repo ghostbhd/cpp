@@ -6,7 +6,7 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/22 05:56:48 by abouhmad          #+#    #+#             */
-/*   Updated: 2022/11/24 17:45:58 by abouhmad         ###   ########.fr       */
+/*   Updated: 2022/12/16 00:30:53 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ void Rep::replace(std::string find, std::string rp)
 			{
 				content.erase(pos, find.length());
 				content.insert(pos, rp);
-				pos = content.find(find);
+				pos = content.find(find, pos + rp.length());
 			}
 			outf << content;
 		}
