@@ -6,7 +6,7 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/20 13:35:10 by abouhmad          #+#    #+#             */
-/*   Updated: 2022/12/20 13:41:16 by abouhmad         ###   ########.fr       */
+/*   Updated: 2022/12/20 13:51:11 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 #include "ClapTrap.hpp"
 
-class FragTrap : ClapTrap
+class FragTrap : public ClapTrap
 {
 private:
 	FragTrap();

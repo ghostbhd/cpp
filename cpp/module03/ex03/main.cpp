@@ -6,7 +6,7 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/04 16:38:51 by abouhmad          #+#    #+#             */
-/*   Updated: 2022/12/20 13:48:53 by abouhmad         ###   ########.fr       */
+/*   Updated: 2022/12/20 13:58:53 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,14 @@ int main()
     ScavTrap boss("boss");
     boss.attack("employee");
     boss.guardGate();
-
-    FragTrap employee("employee");
-    employee.attack("boss");
+    
+    std::cout << "\n------------------------\n" << std::endl;
+    
+    FragTrap employee("employee2");
+    employee.attack("boss2");
     employee.highFivesGuys();
+    
+    std::cout << "\n------------------------\n" << std::endl;
     
     return 0;
 }

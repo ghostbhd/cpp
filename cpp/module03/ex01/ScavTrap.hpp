@@ -6,7 +6,7 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/04 20:56:42 by abouhmad          #+#    #+#             */
-/*   Updated: 2022/12/05 04:47:02 by abouhmad         ###   ########.fr       */
+/*   Updated: 2022/12/20 13:50:03 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ private:
 public:
     ScavTrap(std::string name);
     ~ScavTrap();
-    void attack(std::string const &target);
+    // void attack(std::string const &target);
     void guardGate();
 };
 

@@ -6,7 +6,7 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/04 19:49:53 by abouhmad          #+#    #+#             */
-/*   Updated: 2022/12/04 20:26:43 by abouhmad         ###   ########.fr       */
+/*   Updated: 2022/12/20 13:55:42 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ ClapTrap::ClapTrap(ClapTrap const &clap)
 
 ClapTrap::~ClapTrap()
 {
-	std::cout << "ClapTrap Destructor called" << std::endl;
+	std::cout << "ClapTrap destructor called" << std::endl;
 }
 
 ClapTrap &ClapTrap::operator=(ClapTrap const &clap)
