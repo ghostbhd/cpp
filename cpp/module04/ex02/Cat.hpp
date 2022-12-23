@@ -6,7 +6,7 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/05 22:21:11 by abouhmad          #+#    #+#             */
-/*   Updated: 2022/12/08 22:37:04 by abouhmad         ###   ########.fr       */
+/*   Updated: 2022/12/23 05:59:26 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ private:
 
 public:
     Cat();
+    Cat(const Cat &copy);
+    Cat &operator=(const Cat &copy);
     ~Cat();
 
     void makeSound() const;

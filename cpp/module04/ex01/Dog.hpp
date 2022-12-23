@@ -6,7 +6,7 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/06 03:52:14 by abouhmad          #+#    #+#             */
-/*   Updated: 2022/12/08 18:17:28 by abouhmad         ###   ########.fr       */
+/*   Updated: 2022/12/23 05:58:14 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ private:
 	Brain *_brain;
 public:
 	Dog();
+	Dog(const Dog &copy);
+	Dog &operator=(const Dog &copy);
 	~Dog();
 
 	void makeSound() const;

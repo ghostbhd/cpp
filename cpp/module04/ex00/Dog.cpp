@@ -6,7 +6,7 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/06 03:58:49 by abouhmad          #+#    #+#             */
-/*   Updated: 2022/12/06 09:09:56 by abouhmad         ###   ########.fr       */
+/*   Updated: 2022/12/23 05:56:20 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,19 @@ Dog::Dog()
 {
 	this->type = "Dog";
 	std::cout << "Dog constructor called" << std::endl;
+}
+
+Dog::Dog(const Dog &copy)
+{
+	this->type = copy.type;
+	std::cout << "Dog copy constructor called" << std::endl;
+}
+
+Dog &Dog::operator=(const Dog &copy)
+{
+	this->type = copy.type;
+	std::cout << "Dog assignation operator called" << std::endl;
+	return (*this);
 }
 
 Dog::~Dog()
