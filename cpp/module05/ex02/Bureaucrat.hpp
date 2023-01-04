@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Bureaucrat.hpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ghost <ghost@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/09 00:14:23 by abouhmad          #+#    #+#             */
-/*   Updated: 2022/12/09 20:40:39 by abouhmad         ###   ########.fr       */
+/*   Updated: 2023/01/04 19:59:17 by ghost            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 #define BUREAUCRAT_HPP
 
 #include <iostream>
+#include <string>
+#include <fstream>
 #include "Form.hpp"
 
 class Form;
@@ -38,6 +40,7 @@ public:
 	void decrementGrade();
 
 	void signForm(Form &f);
+	void executeForm(Form const &form);
 	// Exceptions --------------------------------------
 	class GradeTooHighException : public std::exception
 	{

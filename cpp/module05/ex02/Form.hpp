@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Form.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ghost <ghost@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/09 01:56:35 by abouhmad          #+#    #+#             */
-/*   Updated: 2023/01/03 22:07:22 by abouhmad         ###   ########.fr       */
+/*   Updated: 2023/01/04 19:51:26 by ghost            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,6 +52,11 @@ public:
 	{
 	public:
 		virtual const char *what() const throw() { return ("Grade too low"); }
+	};
+	class FormNotSignedException : public std::exception
+	{
+	public:
+		virtual const char *what() const throw() { return ("Form not signed"); }
 	};
 };
 
