@@ -6,13 +6,13 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/09 18:19:26 by abouhmad          #+#    #+#             */
-/*   Updated: 2022/12/09 20:56:49 by abouhmad         ###   ########.fr       */
+/*   Updated: 2023/01/03 22:09:34 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Form.hpp"
 
-Form::Form(std::string const &name, int gradeToSign) : _name(name), _gradeToSign(gradeToSign), _gradeToExecute(0)
+Form::Form(std::string const &name, int gradeToSign, int gradeToExecute) : _name(name), _signed(false), _gradeToSign(gradeToSign), _gradeToExecute(gradeToExecute)
 {
     if (gradeToSign < 1)
         throw Form::GradeTooHighException();
@@ -48,8 +48,8 @@ void Form::beSigned(const Bureaucrat &b)
 std::ostream &operator<<(std::ostream &o, Form const &form)
 {
     o << ">> Form informations" << std::endl;
-    o << "Name : " << form.getName() << std::endl;
-    o << "Grade to signed : " << form.getGradeToSign() << std::endl;
-    o << "Grade to execute : " << form.getGradeToExecute() << std::endl;
+    o << "Name : " << form.getName() << std::endl
+      << "Grade to signed : " << form.getGradeToSign() << std::endl
+      << "Grade to execute : " << form.getGradeToExecute() << std::endl;
     return (o);
 }

@@ -6,7 +6,7 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/23 06:03:09 by abouhmad          #+#    #+#             */
-/*   Updated: 2022/12/23 06:15:15 by abouhmad         ###   ########.fr       */
+/*   Updated: 2023/01/03 22:02:28 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ public:
     ~PresidentialPardonForm();
 
     void execute(Bureaucrat const & executor) const;
-    
 };
 
 #endif
