@@ -6,7 +6,7 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/09 00:14:23 by abouhmad          #+#    #+#             */
-/*   Updated: 2022/12/09 01:51:08 by abouhmad         ###   ########.fr       */
+/*   Updated: 2023/01/05 23:16:16 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@ class Bureaucrat
 private:
 	std::string const _name;
 	int _grade;
+	Bureaucrat();
 
 public:
-	Bureaucrat();
 	Bureaucrat(std::string name, int grade);
 	Bureaucrat(Bureaucrat const &src);
 	~Bureaucrat();
