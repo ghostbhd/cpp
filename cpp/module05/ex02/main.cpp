@@ -6,24 +6,41 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/09 01:12:32 by abouhmad          #+#    #+#             */
-/*   Updated: 2022/12/09 21:02:57 by abouhmad         ###   ########.fr       */
+/*   Updated: 2023/01/05 22:46:38 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Bureaucrat.hpp"
-#include "Form.hpp"
+#include "ShrubberyCreationForm.hpp"
+#include "RobotomyRequestForm.hpp"
+#include "PresidentialPardonForm.hpp"
 
 int main()
 {
 	try
 	{
-		Bureaucrat b("b", 2);
-		Form form("me", 3);
-		b.signForm(form);
-		std::cout << form;
+		Bureaucrat bureaucrat("bureaucrat", 1);
+		ShrubberyCreationForm shrubberyCreationForm("lwal");
+		RobotomyRequestForm robotomyRequestForm("ttanii");
+		PresidentialPardonForm presidentialPardonForm("ttalt");
+
+		std::cout << bureaucrat << std::endl;
+		bureaucrat.decrementGrade();
+		std::cout << "\n------shrubbery--------" << std::endl;
+		std::cout << shrubberyCreationForm << std::endl;
+		shrubberyCreationForm.beSigned(bureaucrat);
+		shrubberyCreationForm.execute(bureaucrat);
+		std::cout << "\n------robotomy---------" << std::endl;
+		std::cout << robotomyRequestForm << std::endl;
+		robotomyRequestForm.beSigned(bureaucrat);
+		robotomyRequestForm.execute(bureaucrat);
+		std::cout << "\n------presidential-----" << std::endl;
+		std::cout << presidentialPardonForm << std::endl;
+		presidentialPardonForm.beSigned(bureaucrat);
+		presidentialPardonForm.execute(bureaucrat);
 	}
-	catch (std::exception &e)
+	catch(const std::exception& e)
 	{
-		std::cout << e.what() << std::endl;
+		std::cerr << e.what() << '\n';
 	}
+	
 }

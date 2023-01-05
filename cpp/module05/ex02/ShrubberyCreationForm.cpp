@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ShrubberyCreationForm.cpp                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ghost <ghost@student.42.fr>                +#+  +:+       +#+        */
+/*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/04 19:33:51 by ghost             #+#    #+#             */
-/*   Updated: 2023/01/04 20:28:59 by ghost            ###   ########.fr       */
+/*   Updated: 2023/01/05 22:47:55 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ void ShrubberyCreationForm::execute (Bureaucrat const & execute) const
     else if (execute.getGrade() > this->getGradeToExecute())
         throw Form::GradeTooLowException();
     
-    std::ofstream file(this->getName() + "_shrubbery");
+    std::ofstream file(this->_target + "_shrubbery");
     file << "               /!)" << std::endl;
     file << "              /  P}" << std::endl;
     file << "             #    KJ" << std::endl;
