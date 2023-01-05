@@ -6,7 +6,7 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/09 01:12:32 by abouhmad          #+#    #+#             */
-/*   Updated: 2023/01/05 22:46:38 by abouhmad         ###   ########.fr       */
+/*   Updated: 2023/01/05 22:57:05 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,9 +38,8 @@ int main()
 		presidentialPardonForm.beSigned(bureaucrat);
 		presidentialPardonForm.execute(bureaucrat);
 	}
-	catch(const std::exception& e)
+	catch (const std::exception &e)
 	{
 		std::cerr << e.what() << '\n';
 	}
-	
 }

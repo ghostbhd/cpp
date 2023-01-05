@@ -6,7 +6,7 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/04 19:33:51 by ghost             #+#    #+#             */
-/*   Updated: 2023/01/05 22:47:55 by abouhmad         ###   ########.fr       */
+/*   Updated: 2023/01/05 22:57:07 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,13 +35,13 @@ ShrubberyCreationForm &ShrubberyCreationForm::operator=(const ShrubberyCreationF
 
 ShrubberyCreationForm::~ShrubberyCreationForm() {}
 
-void ShrubberyCreationForm::execute (Bureaucrat const & execute) const
+void ShrubberyCreationForm::execute(Bureaucrat const &execute) const
 {
     if (this->getSigned() == false)
         throw Form::FormNotSignedException();
     else if (execute.getGrade() > this->getGradeToExecute())
         throw Form::GradeTooLowException();
-    
+
     std::ofstream file(this->_target + "_shrubbery");
     file << "               /!)" << std::endl;
     file << "              /  P}" << std::endl;
