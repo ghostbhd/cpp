@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   RobotomyRequestForm.hpp                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ghost <ghost@student.42.fr>                +#+  +:+       +#+        */
+/*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/04 20:29:21 by ghost             #+#    #+#             */
-/*   Updated: 2023/01/04 20:41:06 by ghost            ###   ########.fr       */
+/*   Updated: 2023/01/05 17:47:46 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,22 +15,19 @@
 
 #include "Form.hpp"
 
-class RobotomyRequestForm
+class RobotomyRequestForm : public Form
 {
 private:
-    /* data */
+    std::string _target;
+    RobotomyRequestForm();
 public:
-    RobotomyRequestForm(/* args */);
+    RobotomyRequestForm(std::string target);
+    RobotomyRequestForm(const RobotomyRequestForm &copy);
+    RobotomyRequestForm &operator=(const RobotomyRequestForm &copy);
     ~RobotomyRequestForm();
+
+    void execute(Bureaucrat const &execute) const;
 };
-
-RobotomyRequestForm::RobotomyRequestForm(/* args */)
-{
-}
-
-RobotomyRequestForm::~RobotomyRequestForm()
-{
-}
 
 
 #endif
