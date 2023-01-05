@@ -6,7 +6,7 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/05 17:47:21 by abouhmad          #+#    #+#             */
-/*   Updated: 2023/01/05 18:59:45 by abouhmad         ###   ########.fr       */
+/*   Updated: 2023/01/05 19:29:56 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,5 +49,4 @@ void RobotomyRequestForm::execute(Bureaucrat const &execute) const
         else
             std::cout << this->_target << " has been robotomized unsuccessfully" << std::endl;
     }
-    
 }
