@@ -6,7 +6,7 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/09 01:12:32 by abouhmad          #+#    #+#             */
-/*   Updated: 2023/01/05 22:57:05 by abouhmad         ###   ########.fr       */
+/*   Updated: 2023/01/05 23:51:14 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,12 @@ int main()
 
 		std::cout << bureaucrat << std::endl;
 		bureaucrat.decrementGrade();
+
 		std::cout << "\n------shrubbery--------" << std::endl;
 		std::cout << shrubberyCreationForm << std::endl;
 		shrubberyCreationForm.beSigned(bureaucrat);
 		shrubberyCreationForm.execute(bureaucrat);
+
 		std::cout << "\n------robotomy---------" << std::endl;
 		std::cout << robotomyRequestForm << std::endl;
 		robotomyRequestForm.beSigned(bureaucrat);
