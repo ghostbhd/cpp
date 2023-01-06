@@ -1,26 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Converter.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/06 12:56:26 by abouhmad          #+#    #+#             */
-/*   Updated: 2023/01/06 13:03:34 by abouhmad         ###   ########.fr       */
+/*   Created: 2023/01/06 13:06:58 by abouhmad          #+#    #+#             */
+/*   Updated: 2023/01/06 13:08:25 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef CONVERTER_HPP
+#define CONVERTER_HPP
+
 #include <iostream>
 
-// convert a string to an integer, double, float, char, etc.
-int main(int ac, char **av)
+class Converter
 {
-    if (ac != 2)
-    {
-        std::cout << "Error: wrong number of arguments" << std::endl;
-        return (EXIT_FAILURE);
-    }
-    std::string str = av[1];
+private:
+    int _int;
+    float _float;
+    double _double;
+    char _char;
+    bool _isChar;
+    bool _isInt;
+    bool _isFloat;
+    bool _isDouble;
 
-    return (EXIT_SUCCESS);
-}
+public:
+    Converter();
+    Converter(Converter const &src);
+    ~Converter();
+
+    Converter &operator=(Converter const &rhs);
+
+    void convert(std::string str);
+    void print();
+};
+
+#endif
