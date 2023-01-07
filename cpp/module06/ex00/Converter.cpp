@@ -6,7 +6,7 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/08 00:07:22 by abouhmad          #+#    #+#             */
-/*   Updated: 2023/01/08 00:34:58 by abouhmad         ###   ########.fr       */
+/*   Updated: 2023/01/08 00:54:29 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,43 +48,45 @@ void Converter::convert(std::string str)
 	this->_isFloat = false;
 	this->_isDouble = false;
 
-	if (isalpha(std::stoi(str)))
+	try
 	{
-		this->_isChar = true;
 		this->_char = static_cast<char>(std::stoi(str));
+		this->_isChar = true;
 	}
-	else
+	catch (std::exception &e)
 	{
-		try
-		{
-			this->_int = std::stoi(str);
-			this->_isInt = true;
-		}
-		catch (std::exception &e)
-		{
-		}
-		try
-		{
-			this->_float = std::stof(str);
-			this->_isFloat = true;
-		}
-		catch (std::exception &e)
-		{
-		}
-		try
-		{
-			this->_double = std::stod(str);
-			this->_isDouble = true;
-		}
-		catch (std::exception &e)
-		{
-		}
+	}
+	try
+	{
+		this->_int = std::stoi(str);
+		this->_isInt = true;
+	}
+	catch (std::exception &e)
+	{
+	}
+	try
+	{
+		this->_float = std::stof(str);
+		this->_isFloat = true;
+	}
+	catch (std::exception &e)
+	{
+	}
+	try
+	{
+		this->_double = std::stod(str);
+		this->_isDouble = true;
+	}
+	catch (std::exception &e)
+	{
 	}
 }
 
 void Converter::print()
 {
-	if (this->_isChar)
+	if (this->_isChar && !std::isprint(this->_char))
+		std::cout << "char: Non displayable" << std::endl;
+	else if (this->_isChar && std::isprint(this->_char))
 		std::cout << "char: '" << this->_char << "'" << std::endl;
 	else
 		std::cout << "char: impossible" << std::endl;
