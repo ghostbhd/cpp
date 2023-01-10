@@ -6,7 +6,7 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/09 14:02:37 by abouhmad          #+#    #+#             */
-/*   Updated: 2023/01/10 18:58:39 by abouhmad         ###   ########.fr       */
+/*   Updated: 2023/01/10 19:29:31 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,16 @@ public:
 	~Array()
 	{
 		delete[] _array;
+	}
+
+	unsigned int size() const
+	{
+		return _size;
+	}
+
+	T *getValue() const
+	{
+		return _array;
 	}
 };
 
