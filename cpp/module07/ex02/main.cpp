@@ -6,7 +6,18 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/09 11:54:00 by abouhmad          #+#    #+#             */
-/*   Updated: 2023/01/09 11:54:04 by abouhmad         ###   ########.fr       */
+/*   Updated: 2023/01/10 18:54:46 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "Array.hpp"
+
+int main()
+{
+    Array<int> a(5);
+
+    for (int i = 0; i < 5; i++)
+        a[i] = i;
+    for (int i = 0; i < 5; i++)
+        std::cout << a[i] << std::endl;
+}
