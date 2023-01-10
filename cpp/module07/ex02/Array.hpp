@@ -1,33 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   iter.hpp                                           :+:      :+:    :+:   */
+/*   Array.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/09 11:48:14 by abouhmad          #+#    #+#             */
-/*   Updated: 2023/01/09 11:57:10 by abouhmad         ###   ########.fr       */
+/*   Created: 2023/01/09 14:02:37 by abouhmad          #+#    #+#             */
+/*   Updated: 2023/01/09 14:10:43 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ITER_HPP
-#define ITER_HPP
+#ifndef ARRAY_HPP
+#define ARRAY_HPP
 
 #include <iostream>
 
 template <typename T>
 
-void iter(T *array, size_t len, void (*f)(T const &))
+class Array
 {
-    for (size_t i = 0; i < len; i++)
-        f(array[i]);
+private:
+	T *_array;
+	unsigned int _size;
+
+public:
+	Array()
+	{
+		_array = new T[0];
+		_size = 0;
+	}
+	Array(unsigned int n)
+	{
+		_array = new T[n];
+		_size = n;
+	}
+	Array(Array const &src)
+	{
+		*this = src;
+	}
+	~Array()
+	{
+		delete[] _array;
+	}
 }
-
-template <typename T>
-
-void show(T const &x)
-{
-    std::cout << ":> " << x << std::endl;
-}
-
 #endif
