@@ -22,4 +22,4 @@ c :
 	${RM} $(NAME)
 	@echo "\n\x1b[31m \x1b[1m ✅\tDelete [$(NAME)] \x1b[32mSuccess\n\x1b[0m"
 
-re : clean all
+re : c all
