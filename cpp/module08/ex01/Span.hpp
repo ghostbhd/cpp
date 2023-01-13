@@ -1,28 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   easyfind.hpp                                       :+:      :+:    :+:   */
+/*   Span.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/11 22:36:17 by abouhmad          #+#    #+#             */
-/*   Updated: 2023/01/13 21:34:37 by abouhmad         ###   ########.fr       */
+/*   Created: 2023/01/13 22:36:01 by abouhmad          #+#    #+#             */
+/*   Updated: 2023/01/13 22:36:19 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef EASYFIND_HPP
-#define EASYFIND_HPP
+#ifndef SPAN_HPP
+#define SPAN_HPP
 
 #include <iostream>
-#include <vector>
 
-template <typename T>
-int easyfind(T &container, int n)
+class Span
 {
-    typename T::iterator it = std::find(container.begin(), container.end(), n);
-    if (it == container.end())
-        throw std::exception();
-    return *it;
-}
+private:
+    unsigned int _n;
+    unsigned int _size;
+    int *_tab;
+
+public:
+    Span();
+    Span(unsigned int n);
+    Span(Span const &src);
+    ~Span();
+
+    Span &operator=(Span const &rhs);
+
+    void addNumber(int n);
+    int shortestSpan();
+    int longestSpan();
+};
 
 #endif
