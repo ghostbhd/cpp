@@ -6,7 +6,7 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/13 22:37:11 by abouhmad          #+#    #+#             */
-/*   Updated: 2023/01/13 22:37:52 by abouhmad         ###   ########.fr       */
+/*   Updated: 2023/01/14 00:42:31 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,15 @@ void Span::addNumber(int n)
         throw std::exception();
     _tab[_size] = n;
     _size++;
+}
+
+void Span::addNumber(std::list<int>::iterator begin, std::list<int>::iterator end)
+{
+    while (begin != end)
+    {
+        addNumber(*begin);
+        begin++;
+    }
 }
 
 int Span::shortestSpan()

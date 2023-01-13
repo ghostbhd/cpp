@@ -6,7 +6,7 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/13 22:36:01 by abouhmad          #+#    #+#             */
-/*   Updated: 2023/01/13 22:36:19 by abouhmad         ###   ########.fr       */
+/*   Updated: 2023/01/14 00:39:48 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 #define SPAN_HPP
 
 #include <iostream>
+#include <vector>
+#include <list>
 
 class Span
 {
@@ -31,6 +33,7 @@ public:
     Span &operator=(Span const &rhs);
 
     void addNumber(int n);
+    void addNumber(std::list<int>::iterator begin, std::list<int>::iterator end);
     int shortestSpan();
     int longestSpan();
 };

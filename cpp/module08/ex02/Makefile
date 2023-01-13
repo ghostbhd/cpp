@@ -8,7 +8,7 @@ RM = @rm -rf
 
 AR = @ar -rc
 
-NAME = ex01
+NAME = ex02
 
 sanitize = -fsanitize=address -static-libasan -g3
 
