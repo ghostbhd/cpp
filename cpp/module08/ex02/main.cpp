@@ -6,7 +6,7 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/13 22:43:36 by abouhmad          #+#    #+#             */
-/*   Updated: 2023/01/14 02:09:05 by abouhmad         ###   ########.fr       */
+/*   Updated: 2023/01/14 02:20:48 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int main()
 	--it;
 	while (it != ite)
 	{
-		std::cout << *it << std::endl;
+		std::cout << *it << std::endl; 
 		++it;
 	}
 	std::stack<int> s(mstack);
