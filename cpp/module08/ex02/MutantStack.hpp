@@ -6,7 +6,7 @@
 /*   By: abouhmad <abouhmad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/14 00:03:59 by abouhmad          #+#    #+#             */
-/*   Updated: 2023/01/14 00:04:40 by abouhmad         ###   ########.fr       */
+/*   Updated: 2023/01/14 02:03:45 by abouhmad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,15 +36,9 @@ public:
 
     typedef typename std::stack<T>::container_type::iterator iterator;
 
-    iterator begin()
-    {
-        return std::stack<T>::c.begin();
-    }
+    iterator begin() { return std::stack<T>::c.begin(); }
 
-    iterator end()
-    {
-        return std::stack<T>::c.end();
-    }
+    iterator end() { return std::stack<T>::c.end(); }
 };
 
 #endif
