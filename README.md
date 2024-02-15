@@ -1,5 +1,7 @@
 # CPP Modules
 
+This repository contains the development modules for the 42cursus' CPP-Modules project. Each module covers different aspects of C++ programming, including classes, inheritance, polymorphism, templates, and more.
+
 | Project | Description | Topics |
 |---------|-------------|--------|
 | [CPP_00](https://github.com/ghostbhd/cpp/tree/master/module00) | Getting familiar with C++       | Namespaces, classes, member functions, stdio streams, initialization lists, static, const, and some other basic stuff |
