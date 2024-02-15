@@ -2,8 +2,8 @@
 
 | Project | Description | Topics |
 |---------|-------------|--------|
-| [CPP_00](https://github.com/ghostbhd/cpp/tree/master/module00) | Getting familiar with C++       | Classes, member functions, and some basic stuff.. |
-| [CPP_01](https://github.com/ghostbhd/cpp/tree/master/module01) | BraiiiiiiinnnzzzZ | New, pointers to members, references, switch statement	 |
+| [CPP_00](https://github.com/ghostbhd/cpp/tree/master/module00) | Getting familiar with C++       | Namespaces, classes, member functions, stdio streams, initialization lists, static, const, and some other basic stuff |
+| [CPP_01](https://github.com/ghostbhd/cpp/tree/master/module01) | BraiiiiiiinnnzzzZ | Memory allocation, pointers to members, references, switch statement |
 | [CPP_02](https://github.com/ghostbhd/cpp/tree/master/module02) | My First Orthodox Class      | Ad-hoc polymorphism, operator overloading and Orthodox Canonical class form |
 | [CPP_03](https://github.com/ghostbhd/cpp/tree/master/module03) | Aaaaand... OPEN!      | Inheritance |
 | [CPP_04](https://github.com/ghostbhd/cpp/tree/master/module04) | I don't want to set the world on fire       | Subtype polymorphism, abstract classes, interfaces |
